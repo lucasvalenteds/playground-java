@@ -1,0 +1,114 @@
+{
+  "$id": "https://httpbin.org/headers",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "headers": {
+      "$id": "/properties/headers",
+      "type": "object",
+      "properties": {
+        "Accept": {
+          "$id": "/properties/headers/properties/Accept",
+          "type": "string",
+          "title": "The Accept Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+          ]
+        },
+        "Accept-Encoding": {
+          "$id": "/properties/headers/properties/Accept-Encoding",
+          "type": "string",
+          "title": "The Accept-encoding Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "gzip, deflate, br"
+          ]
+        },
+        "Accept-Language": {
+          "$id": "/properties/headers/properties/Accept-Language",
+          "type": "string",
+          "title": "The Accept-language Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "en-US,en;q=0.5"
+          ]
+        },
+        "Connection": {
+          "$id": "/properties/headers/properties/Connection",
+          "type": "string",
+          "title": "The Connection Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "close"
+          ]
+        },
+        "Cookie": {
+          "$id": "/properties/headers/properties/Cookie",
+          "type": "string",
+          "title": "The Cookie Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "_gauges_unique_day=1; _gauges_unique_month=1; _gauges_unique_year=1; _gauges_unique=1"
+          ]
+        },
+        "Dnt": {
+          "$id": "/properties/headers/properties/Dnt",
+          "type": "string",
+          "title": "The Dnt Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "1"
+          ]
+        },
+        "Host": {
+          "$id": "/properties/headers/properties/Host",
+          "type": "string",
+          "title": "The Host Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "httpbin.org"
+          ]
+        },
+        "Referer": {
+          "$id": "/properties/headers/properties/Referer",
+          "type": "string",
+          "title": "The Referer Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://httpbin.org/"
+          ]
+        },
+        "Upgrade-Insecure-Requests": {
+          "$id": "/properties/headers/properties/Upgrade-Insecure-Requests",
+          "type": "string",
+          "title": "The Upgrade-insecure-requests Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "1"
+          ]
+        },
+        "User-Agent": {
+          "$id": "/properties/headers/properties/User-Agent",
+          "type": "string",
+          "title": "The User-agent Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Mozilla/5.0 (X11; Linux x86_64; rv:58.0) Gecko/20100101 Firefox/58.0"
+          ]
+        }
+      }
+    }
+  }
+}

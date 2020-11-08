@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "get",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Content-Length": "413"
+    },
+    "json": {
+      "url": "http://localhost:8081/get",
+      "headers": {
+        "Host": "http://localhost:8081/"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample page</title>
+</head>
+<body>
+<h1>Hello World</h1>
+<p class="some-text">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, enim, hic. Ab accusantium aliquam architecto
+    consectetur eaque eveniet harum, inventore magnam nesciunt quaerat quidem, ratione tempore voluptas? Porro,
+    repudiandae, veritatis.
+</p>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae deserunt dolorem doloribus facilis quisquam!
+    Aliquid cumque delectus doloribus excepturi fugit obcaecati qui quisquam ratione sed temporibus. Ad harum,
+    inventore?
+</p>
+<p>Cur barcas peregrinatione?</p>
+
+<p id="advice">Aw, undead rum. go to french polynesia.</p>
+
+<form>
+    <label>
+        <input type="text">
+    </label>
+    <button id="click" type="button" name="changer">Click me</button>
+</form>
+<script>
+    document.querySelector("button[name=changer]").onclick = () => {
+        window.location.href = new URL("http://localhost:8081/");
+    };
+</script>
+</body>
+</html>
