@@ -10,6 +10,7 @@
 
     <modules>
         <module>modules/devskiller_jfairy</module>
+        <module>modules/eclipse_jgit</module>
         <module>modules/fasterxml_jackson-annotations</module>
         <module>modules/gmessner_gitlab4j-api</module>
         <module>modules/google_guice</module>
