@@ -1,6 +1,5 @@
 package com.playground.java.se;
 
-import com.playground.java.se.Pair;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,6 +12,7 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -76,12 +76,8 @@ class FilesTest {
                     }
                 })
                 .filter(Objects::nonNull)
-                .sorted((a, b) -> {
-                    if (a.second < b.second) return -1;
-                    else if (Objects.equals(a.second, b.second)) return 0;
-                    else return 1;
-                })
-                .map(pair -> String.format("%s (%skb)", pair.first, pair.second))
+                .sorted(Comparator.comparingLong(Pair::second))
+                .map(pair -> String.format("%s (%skb)", pair.first(), pair.second()))
                 .collect(Collectors.toList());
 
         assertThat(filesSortedBySize).containsExactly("file3.txt (6kb)", "file2.txt (22kb)", "file1.txt (46kb)");

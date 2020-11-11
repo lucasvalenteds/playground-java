@@ -12,4 +12,4 @@ This repository contains code written to demonstrate libraries and frameworks ta
 | Update dependencies | `./mvnw versions:use-latest-releases` |
 | Install browser drivers | `./mvnw -pl :seleniumhq_selenium webdriverextensions:install-drivers` |
 
-[sdk]: https://img.shields.io/badge/jdk-14-5481A0.svg "Java Development Kit 14"
+[sdk]: https://img.shields.io/badge/jdk-15-5481A0.svg "Java Development Kit 15"
