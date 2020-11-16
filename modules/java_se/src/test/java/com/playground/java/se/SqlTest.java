@@ -90,22 +90,22 @@ class SqlTest {
         PreparedStatement statement = connection.prepareStatement(QUERY_SELECT_CUSTOMER);
         ResultSet resultSet = statement.executeQuery();
 
-        List<Customer> people = new ArrayList<>(2);
+        List<Customer> customers = new ArrayList<>(2);
         while (resultSet.next()) {
-            people.add(new Customer(
+            customers.add(new Customer(
                 resultSet.getLong(1),
                 resultSet.getString(2),
                 resultSet.getInt(3)
             ));
         }
 
-        assertEquals(2, people.size());
-        assertEquals(1L, people.get(0).getId());
-        assertEquals("John Smith", people.get(0).getName());
-        assertEquals(45, people.get(0).getAge());
-        assertEquals(2L, people.get(1).getId());
-        assertEquals("Mary Jane", people.get(1).getName());
-        assertEquals(32, people.get(1).getAge());
+        assertEquals(2, customers.size());
+        assertEquals(1L, customers.get(0).getId());
+        assertEquals("John Smith", customers.get(0).getName());
+        assertEquals(45, customers.get(0).getAge());
+        assertEquals(2L, customers.get(1).getId());
+        assertEquals("Mary Jane", customers.get(1).getName());
+        assertEquals(32, customers.get(1).getAge());
     }
 
     @DisplayName("Selecting single row")
