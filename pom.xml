@@ -16,6 +16,7 @@
         <module>modules/google_guice</module>
         <module>modules/hcoles_pitest</module>
         <module>modules/hibernate_hibernate-orm</module>
+        <module>modules/hivemq_hivemq-mqtt-client</module>
         <module>modules/j-easy_easy-batch</module>
         <module>modules/java_se</module>
         <module>modules/java_javax</module>
@@ -68,6 +69,16 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.7.0</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>testcontainers</artifactId>
+            <version>1.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>1.15.0</version>
         </dependency>
     </dependencies>
 
