@@ -32,7 +32,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class MainTest {
 
     @Container
-    public static final GenericContainer container = new GenericContainer(DockerImageName.parse("eclipse-mosquitto:1.6"))
+    public static final GenericContainer<?> container = new GenericContainer<>(DockerImageName.parse("eclipse-mosquitto:1.6"))
         .withExposedPorts(1883)
         .waitingFor(Wait.forListeningPort());
 
