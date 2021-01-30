@@ -16,6 +16,7 @@
         <module>modules/google_guice</module>
         <module>modules/hcoles_pitest</module>
         <module>modules/hibernate_hibernate-orm</module>
+        <module>modules/influxdata_influxdb-client-java</module>
         <module>modules/hivemq_hivemq-mqtt-client</module>
         <module>modules/j-easy_easy-batch</module>
         <module>modules/java_se</module>
