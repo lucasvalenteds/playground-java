@@ -21,13 +21,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MainTest {
 
-    private static final File PROJECT_DIR = Paths.get("", "../", "../", ".git").toFile();
+    private static final File PROJECT_DIR = Paths.get(System.getProperty("user.dir"))
+        .resolve("../").resolve("../").resolve(".git/")
+        .normalize()
+        .toFile();
 
     @DisplayName("Getting all commits from HEAD")
     @Test
     void testLogCommits() throws IOException, GitAPIException {
+        System.out.println(PROJECT_DIR.toString());
         Repository repository = new FileRepositoryBuilder()
-            .setGitDir(PROJECT_DIR)
+            .findGitDir(PROJECT_DIR)
             .setMustExist(true)
             .build();
 
@@ -43,7 +47,7 @@ class MainTest {
     @Test
     void testListingFiles() throws IOException {
         Repository repository = new FileRepositoryBuilder()
-            .setGitDir(PROJECT_DIR)
+            .findGitDir(PROJECT_DIR)
             .setMustExist(true)
             .build();
 
